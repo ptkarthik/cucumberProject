@@ -6,6 +6,9 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.List;
+import java.util.Map;
+
 
 public class RegistrationScenarios {
     public static final Logger logger = LogManager.getLogger(RegistrationScenarios.class);
@@ -38,7 +41,7 @@ public class RegistrationScenarios {
 
     @Then("the user should see an error message indicating the missing fields")
     public void the_user_should_see_an_error_message_indicating_the_missing_fields() {
-logger.info("heloo");
+        logger.info("heloo");
     }
 
     @When("the user enters an invalid email address")
@@ -59,6 +62,18 @@ logger.info("heloo");
     @Then("the user should see an error message indicating the password is too weak")
     public void the_user_should_see_an_error_message_indicating_the_password_is_too_weak() {
 
+    }
+
+    @When("I fill in the registration form with the following details:")
+    public void i_fill_in_the_registration_form_with_the_following_details
+            (io.cucumber.datatable.DataTable dataTable) {
+        List<Map<String, String>> userData = dataTable.asMaps(String.class, String.class);
+        logger.info(userData.get(0).get("firstName"));
+    }
+
+    @Then("the registration should be successful")
+    public void the_registration_should_be_successful() {
+        // Write code here that turns the phrase above into concrete actions
     }
 
 

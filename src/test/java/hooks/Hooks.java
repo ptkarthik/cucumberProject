@@ -15,13 +15,12 @@ public class Hooks {
 
     @Before
     public void setUp() {
-        String.format("The String is %s", "madam");
         // Set up the WebDriver instance
         logger.info("Starting browser and opening application");
         DriverInitiator.threadLocal.set(DriverSetter.getDriver(PropertyReader.getProp().
                 getProperty("browser")));
         DriverInitiator.threadLocal.get().manage().window().maximize();
-        DriverInitiator.threadLocal.get().get("https://testautomationpractice.blogspot.com/");
+        DriverInitiator.threadLocal.get().get("https://demo.automationtesting.in/");
     }
 
     @After
