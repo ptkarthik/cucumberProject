@@ -20,12 +20,14 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.17.0</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.23.0</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -33,6 +35,36 @@
             <artifactId>cucumber-junit</artifactId>
             <version>7.14.0</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>4.23.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.23.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-edge-driver</artifactId>
+            <version>4.23.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>4.23.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

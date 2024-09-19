@@ -8,6 +8,7 @@ public class RegistrationScenarios {
 
     @Given("the user is on the registration page")
     public void the_user_is_on_the_registration_page() {
+
         System.out.println("Navigating to the registration page");
     }
 
