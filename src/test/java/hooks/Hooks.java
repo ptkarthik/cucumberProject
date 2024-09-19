@@ -4,17 +4,20 @@ import driverinitiator.DriverInitiator;
 import driverpackages.DriverSetter;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import utils.PropertyReader;
 
 
 public class Hooks {
 
+    public static final Logger logger = LogManager.getLogger(Hooks.class);
 
     @Before
     public void setUp() {
-
+        String.format("The String is %s", "madam");
         // Set up the WebDriver instance
-        System.out.println("Starting browser and opening application");
+        logger.info("Starting browser and opening application");
         DriverInitiator.threadLocal.set(DriverSetter.getDriver(PropertyReader.getProp().
                 getProperty("browser")));
         DriverInitiator.threadLocal.get().manage().window().maximize();
@@ -24,7 +27,7 @@ public class Hooks {
     @After
     public void tearDown() {
         // Tear down the WebDriver instance
-        System.out.println("Closing browser");
+        logger.info("Closing browser");
         if (DriverInitiator.threadLocal.get() != null) {
             DriverInitiator.threadLocal.get().quit();
         }

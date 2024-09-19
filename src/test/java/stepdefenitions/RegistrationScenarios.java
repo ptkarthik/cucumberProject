@@ -3,28 +3,31 @@ package stepdefenitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class RegistrationScenarios {
+    public static final Logger logger = LogManager.getLogger(RegistrationScenarios.class);
 
     @Given("the user is on the registration page")
     public void the_user_is_on_the_registration_page() {
-
-        System.out.println("Navigating to the registration page");
+        logger.info("Navigating to the registration page");
     }
 
     @When("the user enters valid registration details")
     public void the_user_enters_valid_registration_details() {
-        System.out.println("Registration details entered");
+        logger.info("Registration details entered");
     }
 
     @When("the user submits the registration form")
     public void the_user_submits_the_registration_form() {
-System.out.println("Registration form submitted");
+        logger.info("Registration form submitted");
     }
 
     @Then("the user should see a registration success message")
     public void the_user_should_see_a_registration_success_message() {
-System.out.println("Registration success message");
+        logger.info("Registration success message");
     }
 
 
