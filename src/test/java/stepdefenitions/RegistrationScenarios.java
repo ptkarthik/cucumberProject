@@ -38,7 +38,7 @@ public class RegistrationScenarios {
 
     @Then("the user should see an error message indicating the missing fields")
     public void the_user_should_see_an_error_message_indicating_the_missing_fields() {
-
+logger.info("heloo");
     }
 
     @When("the user enters an invalid email address")
