@@ -86,14 +86,14 @@ public class RegistrationScenarios extends BaseStepDefintions {
 
     private void enterHobbies(String hobbies) {
         String[] hobbiesData = hobbies.split("_");
-        for(String hobbie: hobbiesData) {
-            if("CR".equalsIgnoreCase(hobbie)) {
+        for (String hobbie : hobbiesData) {
+            if ("CR".equalsIgnoreCase(hobbie)) {
                 registrationPage.getCricketHobby().click();
             }
-            if("MO".equalsIgnoreCase(hobbie)) {
+            if ("MO".equalsIgnoreCase(hobbie)) {
                 registrationPage.getMoviesHobby().click();
             }
-            if("HO".equalsIgnoreCase(hobbie)) {
+            if ("HO".equalsIgnoreCase(hobbie)) {
                 registrationPage.getHockeyHobby().click();
             }
         }
