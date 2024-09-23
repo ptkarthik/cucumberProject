@@ -1,18 +1,30 @@
 package stepdefenitions;
 
+import com.google.inject.Inject;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import pages.RegistrationPage;
+
+import java.util.List;
+import java.util.Map;
 
 
-public class RegistrationScenarios {
+public class RegistrationScenarios extends BaseStepDefintions {
+    @Inject
+    private WebDriver driver;
     public static final Logger logger = LogManager.getLogger(RegistrationScenarios.class);
+
+    @Inject
+    private RegistrationPage registrationPage;
+
 
     @Given("the user is on the registration page")
     public void the_user_is_on_the_registration_page() {
-        logger.info("Navigating to the registration page");
+        logger.info(driver.getTitle());
     }
 
     @When("the user enters valid registration details")
@@ -38,7 +50,7 @@ public class RegistrationScenarios {
 
     @Then("the user should see an error message indicating the missing fields")
     public void the_user_should_see_an_error_message_indicating_the_missing_fields() {
-logger.info("heloo");
+        logger.info("heloo");
     }
 
     @When("the user enters an invalid email address")
@@ -59,6 +71,64 @@ logger.info("heloo");
     @Then("the user should see an error message indicating the password is too weak")
     public void the_user_should_see_an_error_message_indicating_the_password_is_too_weak() {
 
+    }
+
+    @When("I fill in the registration form with the following details:")
+    public void i_fill_in_the_registration_form_with_the_following_details
+            (io.cucumber.datatable.DataTable dataTable) {
+        List<Map<String, String>> listofMaps = dataTable.asMaps();
+        for (Map<String, String> map : listofMaps) {
+            enterRegistrationDetails(map);
+            enterGenderDetails("Male");
+            enterHobbies("CR_MO");
+        }
+    }
+
+    private void enterHobbies(String hobbies) {
+        String[] hobbiesData = hobbies.split("_");
+        for(String hobbie: hobbiesData) {
+            if("CR".equalsIgnoreCase(hobbie)) {
+                registrationPage.getCricketHobby().click();
+            }
+            if("MO".equalsIgnoreCase(hobbie)) {
+                registrationPage.getMoviesHobby().click();
+            }
+            if("HO".equalsIgnoreCase(hobbie)) {
+                registrationPage.getHockeyHobby().click();
+            }
+        }
+    }
+
+    private void enterGenderDetails(String gender) {
+        switch (gender) {
+            case "Female": {
+                registrationPage.getFemaleGender().click();
+                break;
+            }
+            case "Male": {
+                registrationPage.getMaleGender().click();
+            }
+
+        }
+    }
+
+
+    private void enterRegistrationDetails(Map map) {
+
+        registrationPage.getFirstName().sendKeys(String.valueOf(map.get("firstName")));
+        registrationPage.getLastName().sendKeys((CharSequence) map.get("lastName"));
+        registrationPage.getAddress().sendKeys(map.get("address").toString());
+        registrationPage.getEmailAddress().sendKeys(map.get("email").toString());
+        registrationPage.getPhoneNumber().sendKeys(map.get("phone").toString());
+        registrationPage.getPassword().sendKeys(map.get("password").toString());
+        registrationPage.getConfirmPassword().sendKeys(map.get("confirmPassword").toString());
+
+    }
+
+
+    @Then("the registration should be successful")
+    public void the_registration_should_be_successful() {
+        // Write code here that turns the phrase above into concrete actions
     }
 
 

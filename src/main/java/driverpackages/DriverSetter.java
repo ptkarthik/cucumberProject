@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSetter {
 
-    public static WebDriver getDriver(String driver) {
+    public static WebDriver getInstanceDriver(String driver) {
         String driverName = driver.toLowerCase();
         WebDriver driverObj = null;
         switch (driverName) {
@@ -28,8 +28,6 @@ public class DriverSetter {
                 driverObj = new ChromeDriver();
                 break;
             }
-
-
         }
         return driverObj;
     }
