@@ -1,0 +1,82 @@
+2024-10-02 13:27:49 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-02 13:27:49 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-02 13:27:50 [main] INFO  hooks.Hooks - Closing browser
+2024-10-02 13:30:47 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-02 13:30:47 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-02 13:30:48 [main] INFO  hooks.Hooks - Closing browser
+2024-10-02 13:31:16 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-02 13:31:17 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-02 13:31:52 [main] INFO  hooks.Hooks - Closing browser
+2024-10-02 13:32:05 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-02 13:32:05 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-02 13:32:06 [main] INFO  hooks.Hooks - Closing browser
+2024-10-02 13:32:45 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-02 13:32:45 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-02 22:29:38 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-02 22:29:38 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 08:48:39 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 08:50:48 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 08:51:23 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 08:51:23 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 08:51:24 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 08:52:07 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 08:52:07 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 08:52:55 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 08:52:55 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 08:53:30 [main] INFO  stepdefenitions.RegistrationScenarios - The Valid languages are [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ]
+2024-10-03 08:53:30 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 08:53:45 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 08:53:45 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 08:54:56 [main] INFO  stepdefenitions.RegistrationScenarios - The Valid languages are [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ]
+2024-10-03 08:54:56 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 08:55:23 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 08:55:23 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 08:55:24 [main] INFO  stepdefenitions.RegistrationScenarios - The Valid languages are [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ]
+2024-10-03 09:01:17 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 09:01:17 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 09:01:57 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 09:01:57 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 09:01:59 [main] INFO  stepdefenitions.RegistrationScenarios - The Valid languages are [Arabic, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, Estonian, Filipino, Finnish, French, German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Korean, Latvian, Lithuanian, Malay, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese]
+2024-10-03 10:47:10 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 10:48:45 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 10:50:00 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 10:50:00 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 10:50:02 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 10:50:40 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 10:50:41 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 10:51:33 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 10:52:37 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 10:52:38 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 10:52:45 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 11:21:59 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 11:22:02 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 11:22:03 [main] INFO  stepdefenitions.RegistrationScenarios - The Valid languages are [Select Skills, Adobe InDesign, Adobe Photoshop, Analytics, Android, APIs, Art Design, AutoCAD, Backup Management, C, C++, Certifications, Client Server, Client Support, Configuration, Content Managment, Content Management Systems (CMS), Corel Draw, Corel Word Perfect, CSS, Data Analytics, Desktop Publishing, Design, Diagnostics, Documentation, End User Support, Email, Engineering, Excel, FileMaker Pro, Fortran, HTML, Implementation, Installation, Internet, iOS, iPhone, Linux, Java, Javascript, Mac, Matlab, Maya, Microsoft Excel, Microsoft Office, Microsoft Outlook, Microsoft Publisher, Microsoft Word, Microsoft Visual, Mobile, MySQL, Networks, Open Source Software, Oracle, Perl, PHP, Presentations, Processing, Programming, PT Modeler, Python, QuickBooks, Ruby, Shade, Software, Spreadsheet, SQL, Support, Systems Administration, Tech Support, Troubleshooting, Unix, UI / UX, Web Page Design, Windows, Word Processing, XML, XHTML]
+2024-10-03 11:22:03 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 11:40:59 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:04:29 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:04:50 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:05:36 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:05:58 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:06:36 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:07:19 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:08:08 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:09:00 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:09:57 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:12:29 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:13:36 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:14:22 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 12:21:36 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 12:21:36 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 12:21:37 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 15:22:27 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 15:22:27 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 15:22:29 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 15:23:56 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 15:23:56 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 15:23:57 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 15:25:41 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 15:25:42 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 15:25:44 [main] INFO  hooks.Hooks - Closing browser
+2024-10-03 15:29:16 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-03 15:29:16 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-03 15:29:19 [main] INFO  hooks.Hooks - Closing browser
