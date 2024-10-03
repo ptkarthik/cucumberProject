@@ -4,6 +4,8 @@ import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 @Getter
 public class RegistrationPage extends BasePage {
 
@@ -43,8 +45,12 @@ public class RegistrationPage extends BasePage {
     private WebElement monthOFDOB;
     @FindBy(xpath = "//input[@id='firstpassword']")
     private WebElement password;
+    @FindBy(xpath = "//select[@id='Skills']/option")
+    private List<WebElement> listOfSkills;
+    @FindBy(xpath = "//div[@id='msdd']")
+    private WebElement languageTextBox;
     @FindBy(xpath = "//input[@id='secondpassword']")
     private WebElement confirmPassword;
-    @FindBy(xpath = "//input[@id='submitbtn']")
+    @FindBy(xpath = "//button[@id='submitbtn']")
     private WebElement submit;
 }
