@@ -1,10 +1,14 @@
 package stepdefenitions;
 
+import com.google.inject.Inject;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
 
 public class SignSignOutScenario {
+    @Inject
+    private WebDriver driver;
     @Given("the user is on the sign-in page")
     public void the_user_is_on_the_sign_in_page() {
         // Write code here that turns the phrase above into concrete actions

@@ -42,13 +42,13 @@ public class Hooks {
         logger.info("Starting browser and opening application");
     }
 
-//    @After
-//    public void tearDown() {
-//        // Tear down the WebDriver instance
-//        logger.info("Closing browser");
-//        if (DriverInitiator.getDriver() != null) {
+    @After
+    public void tearDown() {
+        // Tear down the WebDriver instance
+        logger.info("Closing browser");
+        if (DriverInitiator.getDriver() != null) {
 //            DriverInitiator.getDriver().quit();
-//        }
-//    }
+        }
+    }
 
 }

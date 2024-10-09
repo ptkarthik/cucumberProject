@@ -1,22 +1,32 @@
 package stepdefenitions;
 
 import com.google.inject.Inject;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import models.Language;
+import models.Skill;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import pages.RegistrationPage;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
 
 public class RegistrationScenarios extends BaseStepDefintions {
     @Inject
     private WebDriver driver;
     public static final Logger logger = LogManager.getLogger(RegistrationScenarios.class);
+
+    private final List<String> langugages = Arrays.asList("Arabic", "English", "Polish");
+    private final List<String> skills = Arrays.asList("Adobe InDesign", "APIs");
 
     @Inject
     private RegistrationPage registrationPage;
@@ -75,12 +85,44 @@ public class RegistrationScenarios extends BaseStepDefintions {
 
     @When("I fill in the registration form with the following details:")
     public void i_fill_in_the_registration_form_with_the_following_details
-            (io.cucumber.datatable.DataTable dataTable) {
+            (DataTable dataTable) {
         List<Map<String, String>> listofMaps = dataTable.asMaps();
         for (Map<String, String> map : listofMaps) {
             enterRegistrationDetails(map);
             enterGenderDetails("Male");
             enterHobbies("CR_MO");
+            enterLanguagesAndSelectThem(langugages, Language.getAllValues());
+            enterTheSkills(skills, Skill.getAllValues());
+        }
+    }
+
+    private void enterTheSkills(List<String> skills, List<String> allValues) {
+        Select select = new Select(registrationPage.getSkillsSelect());
+        for (String s : skills) {
+            if (allValues.contains(s)) {
+                select.selectByVisibleText(s);
+            }
+        }
+    }
+
+    private void getSkills() {
+        List<String> skills = new ArrayList<>();
+        List<WebElement> languagesExpected = registrationPage.getListOfSkills();
+        for (WebElement s : languagesExpected) {
+            skills.add(s.getText());
+        }
+        logger.info("The Valid languages are " + skills);
+    }
+
+
+    private void enterLanguagesAndSelectThem(List<String> languages, List<String> allValues) {
+        registrationPage.getLanguageTextBox().click();
+        String baseXpath = "//div[@id='msdd']/following-sibling::div/ul/li/a[contains(text(),'";
+        String endXpath = "')]";
+        for (String values : allValues) {
+            if (languages.contains(values)) {
+                driver.findElement(By.xpath(baseXpath + values + endXpath)).click();
+            }
         }
     }
 
@@ -114,7 +156,6 @@ public class RegistrationScenarios extends BaseStepDefintions {
 
 
     private void enterRegistrationDetails(Map map) {
-
         registrationPage.getFirstName().sendKeys(String.valueOf(map.get("firstName")));
         registrationPage.getLastName().sendKeys((CharSequence) map.get("lastName"));
         registrationPage.getAddress().sendKeys(map.get("address").toString());
@@ -122,7 +163,6 @@ public class RegistrationScenarios extends BaseStepDefintions {
         registrationPage.getPhoneNumber().sendKeys(map.get("phone").toString());
         registrationPage.getPassword().sendKeys(map.get("password").toString());
         registrationPage.getConfirmPassword().sendKeys(map.get("confirmPassword").toString());
-
     }
 
 
