@@ -80,3 +80,6 @@
 2024-10-03 15:29:16 [main] INFO  hooks.Hooks - Starting browser and opening application
 2024-10-03 15:29:16 [main] INFO  stepdefenitions.RegistrationScenarios - Register
 2024-10-03 15:29:19 [main] INFO  hooks.Hooks - Closing browser
+2024-10-09 12:51:43 [main] INFO  hooks.Hooks - Starting browser and opening application
+2024-10-09 12:51:44 [main] INFO  stepdefenitions.RegistrationScenarios - Register
+2024-10-09 12:51:46 [main] INFO  hooks.Hooks - Closing browser
