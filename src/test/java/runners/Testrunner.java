@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdefenitions","hooks"}
         , plugin = {"pretty", "html:target/cucumber-report.html"} )
 public class Testrunner {
+
     private static final Injector injector = Guice.createInjector(new TestModule());
 
     public static Injector getInjector() {

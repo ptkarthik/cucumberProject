@@ -156,6 +156,7 @@ public class RegistrationScenarios extends BaseStepDefintions {
 
 
     private void enterRegistrationDetails(Map map) {
+
         registrationPage.getFirstName().sendKeys(String.valueOf(map.get("firstName")));
         registrationPage.getLastName().sendKeys((CharSequence) map.get("lastName"));
         registrationPage.getAddress().sendKeys(map.get("address").toString());
